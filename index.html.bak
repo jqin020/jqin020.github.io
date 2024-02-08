@@ -660,6 +660,19 @@
 
             </li>
 
+          </ul>
+
+          <h3 class="h3 skills-title">Framework/Software</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"> Pytorch, Scikit-learn, Pandas, PyTorch Geometric, Gurobi|Cplex|SCIP, OpenDSS,</h5>
+              </div>
+
+            </li>
 
 
           </ul>
