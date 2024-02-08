@@ -48,7 +48,7 @@
         <div class="info-content">
           <h1 class="name" title="Jingtao Qin">Jingtao Qin</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">PhD Student</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -236,10 +236,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Reinforcement Learning for UC</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Multi-step reinforcement learning algorithms to solve Unit Commitment (UC) problems.
                 </p>
               </div>
 
@@ -252,10 +252,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Physics-informed Method for UC</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Physics-informed graph convolutional networks to solve Unit Commitment (UC) problems.
                 </p>
               </div>
 
@@ -268,10 +268,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Physics-informed Method for DR</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Physics-informed graph convolutional networks to solve Dynamic Reconfiguration (DR) in distributed systems.
                 </p>
               </div>
 
@@ -284,10 +284,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Machine Learning with Polyak stepsize</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Polyak stepsize with level value adjustment to accelerate the leaning rate of machine learning.
                 </p>
               </div>
 
