@@ -2,6 +2,20 @@
 
 A polished static portfolio site for GitHub Pages, inspired by the structure and energy of [soumyajit4419/Portfolio](https://github.com/soumyajit4419/Portfolio), but rebuilt here as a lightweight one-page site with no build step.
 
+## Publish on Vercel
+
+1. Push this project to GitHub.
+2. Go to <https://vercel.com/new>.
+3. Import the `jqin020.github.io` repository.
+4. Use these settings:
+   - Framework Preset: `Other`
+   - Build Command: leave empty
+   - Output Directory: leave empty
+   - Install Command: leave empty
+5. Click `Deploy`.
+
+Vercel will create a live URL like `https://your-project.vercel.app`.
+
 ## Publish on GitHub Pages
 
 1. Create a repository named `your-username.github.io`.
