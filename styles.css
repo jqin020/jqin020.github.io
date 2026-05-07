@@ -37,9 +37,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(110deg, rgba(69, 215, 189, 0.12), transparent 36%),
-    linear-gradient(240deg, rgba(242, 179, 93, 0.10), transparent 34%),
-    radial-gradient(circle at 84% 18%, rgba(169, 140, 255, 0.13), transparent 24%);
+    linear-gradient(110deg, rgba(69, 215, 189, 0.08), transparent 36%),
+    linear-gradient(240deg, rgba(242, 179, 93, 0.07), transparent 34%);
   opacity: 0.84;
   z-index: -2;
 }
@@ -162,32 +161,39 @@ img {
   overflow: hidden;
 }
 
-.hero-media,
 .hero-overlay {
   position: absolute;
   inset: 0;
 }
 
-.hero-media {
-  z-index: -3;
-}
-
-.hero-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.94) contrast(1.03);
-}
-
 .hero-overlay {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(9, 11, 16, 0.92), rgba(9, 11, 16, 0.56) 52%, rgba(9, 11, 16, 0.78)),
-    linear-gradient(0deg, var(--bg) 0%, rgba(9, 11, 16, 0.12) 28%, rgba(9, 11, 16, 0.2) 100%);
+    linear-gradient(135deg, rgba(199, 112, 240, 0.14), transparent 34%),
+    linear-gradient(315deg, rgba(69, 215, 189, 0.09), transparent 28%),
+    linear-gradient(180deg, rgba(18, 13, 31, 0.78), var(--bg) 74%);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
 }
 
 .hero-content {
   width: min(760px, 100%);
+}
+
+.hero-figure {
+  justify-self: end;
+  width: min(530px, 100%);
+  filter: drop-shadow(0 28px 70px rgba(0, 0, 0, 0.42));
+  animation: floatFigure 6s ease-in-out infinite;
+}
+
+.hero-figure img {
+  width: 100%;
 }
 
 .eyebrow {
@@ -230,6 +236,28 @@ h3 {
   max-width: 650px;
   color: #d6deeb;
   font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+}
+
+.dynamic-line {
+  min-height: 2.4rem;
+  margin-bottom: 1.15rem;
+  color: #f1e9ff;
+  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  font-weight: 800;
+}
+
+.dynamic-line span[data-dynamic-role] {
+  color: var(--violet);
+}
+
+.typing-caret {
+  display: inline-block;
+  width: 3px;
+  height: 1.05em;
+  margin-left: 0.18rem;
+  transform: translateY(0.15em);
+  background: var(--teal);
+  animation: blink 900ms steps(2, start) infinite;
 }
 
 .hero-actions {
@@ -300,8 +328,9 @@ h3 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.45fr) minmax(280px, 0.8fr);
   gap: 2rem;
+  align-items: center;
 }
 
 .about-copy {
@@ -315,6 +344,16 @@ h3 {
 .project-grid {
   display: grid;
   gap: 1rem;
+}
+
+.about-avatar {
+  justify-self: center;
+  width: min(240px, 100%);
+  padding: 1rem;
+}
+
+.about-avatar img {
+  width: 100%;
 }
 
 .stats {
@@ -531,10 +570,15 @@ h3 {
     padding-top: 8rem;
   }
 
-  .hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(9, 11, 16, 0.95), rgba(9, 11, 16, 0.66)),
-      linear-gradient(0deg, var(--bg) 0%, rgba(9, 11, 16, 0.15) 36%);
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-figure {
+    justify-self: center;
+    width: min(430px, 88vw);
+    order: -1;
+    opacity: 0.92;
   }
 
   .about-grid,
@@ -596,5 +640,22 @@ h3 {
   *::after {
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes floatFigure {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
   }
 }

@@ -2,6 +2,8 @@
 
 A polished static portfolio site for GitHub Pages, inspired by the structure and energy of [soumyajit4419/Portfolio](https://github.com/soumyajit4419/Portfolio), but rebuilt here as a lightweight one-page site with no build step.
 
+The developer illustration and avatar SVGs are adapted from [soumyajit4419/Portfolio](https://github.com/soumyajit4419/Portfolio). Please keep attribution if you continue using those assets.
+
 ## Publish on Vercel
 
 1. Push this project to GitHub.
